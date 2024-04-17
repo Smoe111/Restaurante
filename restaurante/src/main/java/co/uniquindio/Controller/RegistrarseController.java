@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import java.io.IOException;
 
 public class RegistrarseController implements Initializable {
 
@@ -34,12 +35,19 @@ public class RegistrarseController implements Initializable {
     private TextField txtNombre;
 
     @FXML
-    void OpenViewInicio(ActionEvent event) {
+    private TextField txtUsuario;
+
+    @FXML
+    void OpenViewInicio(ActionEvent event) throws IOException{
+
+        Restaurante.setRoot("viewInicio");
 
     }
 
     @FXML
     void RegistrarUsuario(ActionEvent event) {
+
+
 
     }
 
